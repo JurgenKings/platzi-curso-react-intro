@@ -1,0 +1,54 @@
+.btn-crear {
+   width: 4rem;
+   height: 4rem;
+   position: fixed;
+   right: 5vw;
+   bottom: 5vh;
+   border-radius: 50%;
+   font-size: 3.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   background-color: var(--valid-color);
+   transition: all 0.3s ease;
+   z-index: 1;
+}
+.btn-crear:hover {
+   transform: scale(1.05);
+   background-color: var(--valid-color-active);
+   transform: rotate(360deg);
+}
+
+/* Animación de las ondas */
+.pulse-button::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 0;
+   height: 0;
+   background-color: rgba(90, 233, 102, 0.644);
+   border-radius: 50%;
+   opacity: 0;
+   animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+   0% {
+       width: 0;
+       height: 0;
+       opacity: 0;
+   }
+   50% {
+       width: 50px;
+       height: 50px;
+       opacity: 0.5;
+   }
+   100% {
+       width: 100px;
+       height: 100px;
+       opacity: 0;
+   }
+}

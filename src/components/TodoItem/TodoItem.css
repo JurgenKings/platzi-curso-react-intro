@@ -1,0 +1,16 @@
+li {
+   width: 100%;
+   background-color: var(--second-color);
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: thin solid var(--main-color);
+   margin-bottom: 1rem;
+   align-items: center;
+}
+.p {
+   color: var(--main-color);
+}
+.p-check--active {
+   text-decoration: line-through;
+}

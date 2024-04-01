@@ -1,0 +1,69 @@
+form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(133, 132, 130);
+   padding: 1rem;
+   gap: 1.5rem;
+   width: 40%;
+   height: 50vh;
+   border-radius: 1rem;
+   border: medium solid black;
+}
+
+form label {
+   font-size: 1.5rem;
+   color: var(--main-color);
+   font-weight: bold;
+}
+
+textarea {
+   width: 65%;
+   height: 30%;
+   resize: none;
+   border-radius: .3rem;
+   font-size: 1.2rem;
+}
+
+.todoForm-buttonContainer {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   gap: 1rem;
+}
+
+.todoForm-button {
+   padding: .2rem;
+   border-radius: .5rem;
+   cursor: pointer;
+   width: 6rem;
+   transition: transform .5s ease;
+   font-size: 1.1rem;
+}
+.todoForm-button:hover {
+   transform: scale(1.1);
+}
+
+.todoForm-button--add {
+   background-image: radial-gradient(rgb(63, 238, 10), darkgreen);
+}
+
+.todoForm-button--cancel {
+   background-image: radial-gradient(rgb(252, 102, 65), rgb(124, 179, 124));
+}
+
+@media screen and (max-width: 480px) {
+   form {
+      width: 60%;
+   }
+   textarea {
+      font-size: 1rem;
+      width: 80%;
+      height: 20%;
+   }
+   .todoForm-button {
+      width: 5rem;
+      font-size: 1rem;
+   }
+}
